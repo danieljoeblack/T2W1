@@ -12,7 +12,7 @@ import java.time.Period;
  *
  * @author danie
  */
-public class Employee {
+public abstract class Employee {
     //instance variables
     private final String firstName;
     private final String lastName;
@@ -80,4 +80,5 @@ public class Employee {
         return sin;
     }
     
+    public abstract PayCheque getPaycheck(); 
 }

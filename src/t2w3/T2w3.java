@@ -19,7 +19,7 @@ public class T2w3 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Employee employee1 = new Employee("Daniel","Black",123456789,LocalDate.of(1995, Month.SEPTEMBER,28));
+        HourlyEmployee employee1 = new HourlyEmployee("Daniel","Black",123456789,LocalDate.of(1995, Month.SEPTEMBER,28),25.50);
         
         System.out.println(employee1.toString());
         System.out.println(employee1);
@@ -29,6 +29,9 @@ public class T2w3 {
         System.out.println(employee1.getFirstName());
         System.out.println(employee1.getLastName());
         System.out.println(employee1.getSin());
+        employee1.recordHoursWorked(8);
+        System.out.println(employee1.getPaycheck());
+        
         
 
         
