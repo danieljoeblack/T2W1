@@ -1,0 +1,37 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package t2w3;
+
+import java.time.LocalDate;
+import java.time.Month;
+
+/**
+ *
+ * @author danie
+ */
+public class T2w3 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Employee employee1 = new Employee("Daniel","Black",123456789,LocalDate.of(1995, Month.SEPTEMBER,28));
+        
+        System.out.println(employee1.toString());
+        System.out.println(employee1);
+        System.out.printf("The first employee is %s%n",employee1);
+        
+        System.out.println(employee1.getBirthday());
+        System.out.println(employee1.getFirstName());
+        System.out.println(employee1.getLastName());
+        System.out.println(employee1.getSin());
+        
+
+        
+    }
+    
+}
