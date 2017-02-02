@@ -12,7 +12,8 @@ import java.time.LocalDate;
  * @author danie
  */
 public class CommissionEmployee extends Employee {
-    private double monthlySales,commissionRate;
+    private double monthlySales;
+    private double commissionRate;
     
     public CommissionEmployee(String firstName, String lastName, int sin, LocalDate dob,double comRate) {
         super(firstName, lastName, sin, dob);
@@ -44,5 +45,9 @@ public class CommissionEmployee extends Employee {
         
         return newPay;
     }
-    
+    public double getCommissionAmount(){
+        double payAmount = monthlySales * commissionRate/100;
+        return payAmount;
+    }
 }
+    
